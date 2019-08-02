@@ -1,0 +1,25 @@
+{
+  "name": "script-otp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify app.js -o bundle.js",
+    "script": "ncc build totp.js && squash dist/index.js > dist/totp.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "base32": "0.0.6",
+    "browserify": "^16.3.0",
+    "butternut": "^0.4.6",
+    "ncc": "^0.3.6",
+    "ncmb": "^3.0.0",
+    "node-otp": "^1.2.2",
+    "otpauth": "^3.2.8",
+    "speakeasy": "^2.0.0",
+    "uglify-js": "^3.6.0",
+    "watchify": "^3.11.1"
+  }
+}
